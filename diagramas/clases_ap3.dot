@@ -1,0 +1,27 @@
+digraph G {
+  graph [rankdir=TB, splines=ortho, nodesep=0.65, ranksep=0.85, bgcolor="white", pad=0.25];
+  node [shape=record, fontname="DejaVu Sans", fontsize=10, color="#334155", penwidth=1.2];
+  edge [fontname="DejaVu Sans", fontsize=9, color="#475569", penwidth=1.1, arrowsize=0.8];
+
+  IM [label="{«abstract» InstrumentoMedicion| - id: int\l - codigo: String\l - marca: String\l - modelo: String\l - nroSerie: String\l - estado: EstadoInstrumento\l - fechaProximaCalibracion: LocalDate\l| + estaDisponible(): boolean\l + calibracionVigente(): boolean\l + asignar(): void\l + devolver(): void\l + descripcionTipo(): String\l}"];
+  IE [label="{InstrumentoElectrico| - rangoElectrico: String\l| + descripcionTipo(): String\l}"];
+  IMEC [label="{InstrumentoMecanico| - rangoMecanico: String\l| + descripcionTipo(): String\l}"];
+  CAL [label="{Calibracion| - fecha: LocalDate\l - resultado: ResultadoCalibracion\l - nroCertificado: String\l - laboratorio: String\l - proximoVencimiento: LocalDate\l}"];
+  ASIG [label="{Asignacion| - fechaEntrega: LocalDateTime\l - fechaDevolucion: LocalDateTime\l - condicionEntrega: String\l - condicionDevolucion: String\l| + estaAbierta(): boolean\l + cerrar(): void\l}"];
+  RESP [label="{Responsable| - legajo: String\l - nombre: String\l - email: String\l}"];
+  SEC [label="{Sector| - id: int\l - nombre: String\l}"];
+  GEST [label="{GestorInstrumentos| - instrumentos: List\<InstrumentoMedicion\>\l - calibraciones: List\<Calibracion\>\l - asignaciones: List\<Asignacion\>\l| + agregarInstrumento()\l + buscarPorCodigo()\l + listarOrdenadosPorCodigo()\l + registrarCalibracion()\l + asignar()\l + devolver()\l}"];
+
+  {rank=same; IE; IMEC}
+  {rank=same; CAL; ASIG; RESP; SEC}
+
+  IE -> IM [arrowhead=empty, label="hereda"];
+  IMEC -> IM [arrowhead=empty, label="hereda"];
+  IM -> CAL [dir=both, arrowhead=none, arrowtail=none, label="1     0..*"];
+  IM -> ASIG [dir=both, arrowhead=none, arrowtail=none, label="1     0..*"];
+  ASIG -> RESP [dir=both, arrowhead=none, arrowtail=none, label="0..*     1"];
+  RESP -> SEC [dir=both, arrowhead=none, arrowtail=none, label="0..*     1"];
+  GEST -> IM [arrowhead=vee, style=dashed, label="gestiona"];
+  GEST -> CAL [arrowhead=vee, style=dashed];
+  GEST -> ASIG [arrowhead=vee, style=dashed];
+}

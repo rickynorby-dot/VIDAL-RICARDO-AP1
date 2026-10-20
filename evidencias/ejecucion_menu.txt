@@ -1,0 +1,115 @@
+
+========================================
+       SITRAC-MET - MENÚ PRINCIPAL
+========================================
+1. Registrar instrumento eléctrico
+2. Registrar instrumento mecánico
+3. Listar instrumentos ordenados por código
+4. Buscar instrumento por código
+5. Registrar calibración
+6. Asignar instrumento
+7. Registrar devolución
+8. Consultar asignaciones
+0. Salir
+Seleccione una opción: 
+Código | Tipo | Marca/Modelo | Estado | Calibración
+INS-001 | Instrumento eléctrico [0-1000 V] | Fluke 179 | DISPONIBLE | venc. calibración: 2027-04-19
+INS-002 | Instrumento mecánico [0-10 bar] | Wika 232.50 | DISPONIBLE | venc. calibración: 2026-10-18
+
+========================================
+       SITRAC-MET - MENÚ PRINCIPAL
+========================================
+1. Registrar instrumento eléctrico
+2. Registrar instrumento mecánico
+3. Listar instrumentos ordenados por código
+4. Buscar instrumento por código
+5. Registrar calibración
+6. Asignar instrumento
+7. Registrar devolución
+8. Consultar asignaciones
+0. Salir
+Seleccione una opción: Código a buscar: INS-001 | Instrumento eléctrico [0-1000 V] | Fluke 179 | DISPONIBLE | venc. calibración: 2027-04-19
+
+========================================
+       SITRAC-MET - MENÚ PRINCIPAL
+========================================
+1. Registrar instrumento eléctrico
+2. Registrar instrumento mecánico
+3. Listar instrumentos ordenados por código
+4. Buscar instrumento por código
+5. Registrar calibración
+6. Asignar instrumento
+7. Registrar devolución
+8. Consultar asignaciones
+0. Salir
+Seleccione una opción: Código de instrumento: Condición de entrega: Asignación registrada con id 1 para Juan Pérez
+
+========================================
+       SITRAC-MET - MENÚ PRINCIPAL
+========================================
+1. Registrar instrumento eléctrico
+2. Registrar instrumento mecánico
+3. Listar instrumentos ordenados por código
+4. Buscar instrumento por código
+5. Registrar calibración
+6. Asignar instrumento
+7. Registrar devolución
+8. Consultar asignaciones
+0. Salir
+Seleccione una opción: Código de instrumento: Condición de entrega: Operación no realizada: El instrumento INS-002 no posee una calibración vigente
+
+========================================
+       SITRAC-MET - MENÚ PRINCIPAL
+========================================
+1. Registrar instrumento eléctrico
+2. Registrar instrumento mecánico
+3. Listar instrumentos ordenados por código
+4. Buscar instrumento por código
+5. Registrar calibración
+6. Asignar instrumento
+7. Registrar devolución
+8. Consultar asignaciones
+0. Salir
+Seleccione una opción: #1 | INS-001 | Juan Pérez | ABIERTA
+
+========================================
+       SITRAC-MET - MENÚ PRINCIPAL
+========================================
+1. Registrar instrumento eléctrico
+2. Registrar instrumento mecánico
+3. Listar instrumentos ordenados por código
+4. Buscar instrumento por código
+5. Registrar calibración
+6. Asignar instrumento
+7. Registrar devolución
+8. Consultar asignaciones
+0. Salir
+Seleccione una opción: Código de instrumento: Condición de devolución: Devolución registrada.
+
+========================================
+       SITRAC-MET - MENÚ PRINCIPAL
+========================================
+1. Registrar instrumento eléctrico
+2. Registrar instrumento mecánico
+3. Listar instrumentos ordenados por código
+4. Buscar instrumento por código
+5. Registrar calibración
+6. Asignar instrumento
+7. Registrar devolución
+8. Consultar asignaciones
+0. Salir
+Seleccione una opción: #1 | INS-001 | Juan Pérez | CERRADA
+
+========================================
+       SITRAC-MET - MENÚ PRINCIPAL
+========================================
+1. Registrar instrumento eléctrico
+2. Registrar instrumento mecánico
+3. Listar instrumentos ordenados por código
+4. Buscar instrumento por código
+5. Registrar calibración
+6. Asignar instrumento
+7. Registrar devolución
+8. Consultar asignaciones
+0. Salir
+Seleccione una opción: SITRAC-MET finalizado correctamente.
