@@ -1,0 +1,136 @@
+SITRAC-MET iniciado en modo demo (sin conexi?n MySQL).
+La versi?n normal utiliza JDBC/MySQL con las variables SITRAC_DB_*.
+
+========================================
+       SITRAC-MET - MEN? PRINCIPAL
+========================================
+1. Registrar instrumento el?ctrico
+2. Registrar instrumento mec?nico
+3. Listar instrumentos en memoria
+4. Buscar instrumento por c?digo
+5. Registrar calibraci?n
+6. Asignar instrumento
+7. Registrar devoluci?n
+8. Consultar asignaciones
+9. Consultar instrumentos persistidos en MySQL
+10. Ver ?ltimas acciones de auditor?a
+0. Salir
+Seleccione una opci?n: 
+C?digo | Tipo | Marca/Modelo | Estado | Calibraci?n
+INS-001 | Instrumento el?ctrico [0-1000 V] | Fluke 179 | DISPONIBLE | venc. calibraci?n: 2027-05-06
+INS-002 | Instrumento mec?nico [0-10 bar] | Wika 232.50 | DISPONIBLE | venc. calibraci?n: 2026-11-05
+
+========================================
+       SITRAC-MET - MEN? PRINCIPAL
+========================================
+1. Registrar instrumento el?ctrico
+2. Registrar instrumento mec?nico
+3. Listar instrumentos en memoria
+4. Buscar instrumento por c?digo
+5. Registrar calibraci?n
+6. Asignar instrumento
+7. Registrar devoluci?n
+8. Consultar asignaciones
+9. Consultar instrumentos persistidos en MySQL
+10. Ver ?ltimas acciones de auditor?a
+0. Salir
+Seleccione una opci?n: C?digo a buscar: INS-001 | Instrumento el?ctrico [0-1000 V] | Fluke 179 | DISPONIBLE | venc. calibraci?n: 2027-05-06
+
+========================================
+       SITRAC-MET - MEN? PRINCIPAL
+========================================
+1. Registrar instrumento el?ctrico
+2. Registrar instrumento mec?nico
+3. Listar instrumentos en memoria
+4. Buscar instrumento por c?digo
+5. Registrar calibraci?n
+6. Asignar instrumento
+7. Registrar devoluci?n
+8. Consultar asignaciones
+9. Consultar instrumentos persistidos en MySQL
+10. Ver ?ltimas acciones de auditor?a
+0. Salir
+Seleccione una opci?n: C?digo de instrumento: Condici?n de entrega: Asignaci?n registrada con id 1
+
+========================================
+       SITRAC-MET - MEN? PRINCIPAL
+========================================
+1. Registrar instrumento el?ctrico
+2. Registrar instrumento mec?nico
+3. Listar instrumentos en memoria
+4. Buscar instrumento por c?digo
+5. Registrar calibraci?n
+6. Asignar instrumento
+7. Registrar devoluci?n
+8. Consultar asignaciones
+9. Consultar instrumentos persistidos en MySQL
+10. Ver ?ltimas acciones de auditor?a
+0. Salir
+Seleccione una opci?n: #1 | INS-001 | Juan P?rez | ABIERTA
+
+========================================
+       SITRAC-MET - MEN? PRINCIPAL
+========================================
+1. Registrar instrumento el?ctrico
+2. Registrar instrumento mec?nico
+3. Listar instrumentos en memoria
+4. Buscar instrumento por c?digo
+5. Registrar calibraci?n
+6. Asignar instrumento
+7. Registrar devoluci?n
+8. Consultar asignaciones
+9. Consultar instrumentos persistidos en MySQL
+10. Ver ?ltimas acciones de auditor?a
+0. Salir
+Seleccione una opci?n: C?digo de instrumento: Condici?n de devoluci?n: Devoluci?n registrada.
+
+========================================
+       SITRAC-MET - MEN? PRINCIPAL
+========================================
+1. Registrar instrumento el?ctrico
+2. Registrar instrumento mec?nico
+3. Listar instrumentos en memoria
+4. Buscar instrumento por c?digo
+5. Registrar calibraci?n
+6. Asignar instrumento
+7. Registrar devoluci?n
+8. Consultar asignaciones
+9. Consultar instrumentos persistidos en MySQL
+10. Ver ?ltimas acciones de auditor?a
+0. Salir
+Seleccione una opci?n: #1 | INS-001 | Juan P?rez | CERRADA
+
+========================================
+       SITRAC-MET - MEN? PRINCIPAL
+========================================
+1. Registrar instrumento el?ctrico
+2. Registrar instrumento mec?nico
+3. Listar instrumentos en memoria
+4. Buscar instrumento por c?digo
+5. Registrar calibraci?n
+6. Asignar instrumento
+7. Registrar devoluci?n
+8. Consultar asignaciones
+9. Consultar instrumentos persistidos en MySQL
+10. Ver ?ltimas acciones de auditor?a
+0. Salir
+Seleccione una opci?n: 
+?ltimas acciones de auditor?a:
+2026-11-06 23:37:45 | Asignaci?n INS-001 a L-1001
+2026-11-06 23:37:45 | Devoluci?n INS-001
+
+========================================
+       SITRAC-MET - MEN? PRINCIPAL
+========================================
+1. Registrar instrumento el?ctrico
+2. Registrar instrumento mec?nico
+3. Listar instrumentos en memoria
+4. Buscar instrumento por c?digo
+5. Registrar calibraci?n
+6. Asignar instrumento
+7. Registrar devoluci?n
+8. Consultar asignaciones
+9. Consultar instrumentos persistidos en MySQL
+10. Ver ?ltimas acciones de auditor?a
+0. Salir
+Seleccione una opci?n: SITRAC-MET finalizado correctamente.

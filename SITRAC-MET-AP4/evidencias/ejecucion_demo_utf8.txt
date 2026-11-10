@@ -1,0 +1,137 @@
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8
+SITRAC-MET iniciado en modo demo (sin conexión MySQL).
+La versión normal utiliza JDBC/MySQL con las variables SITRAC_DB_*.
+
+========================================
+       SITRAC-MET - MENÚ PRINCIPAL
+========================================
+1. Registrar instrumento eléctrico
+2. Registrar instrumento mecánico
+3. Listar instrumentos en memoria
+4. Buscar instrumento por código
+5. Registrar calibración
+6. Asignar instrumento
+7. Registrar devolución
+8. Consultar asignaciones
+9. Consultar instrumentos persistidos en MySQL
+10. Ver últimas acciones de auditoría
+0. Salir
+Seleccione una opción: 
+Código | Tipo | Marca/Modelo | Estado | Calibración
+INS-001 | Instrumento eléctrico [0-1000 V] | Fluke 179 | DISPONIBLE | venc. calibración: 2027-05-06
+INS-002 | Instrumento mecánico [0-10 bar] | Wika 232.50 | DISPONIBLE | venc. calibración: 2026-11-05
+
+========================================
+       SITRAC-MET - MENÚ PRINCIPAL
+========================================
+1. Registrar instrumento eléctrico
+2. Registrar instrumento mecánico
+3. Listar instrumentos en memoria
+4. Buscar instrumento por código
+5. Registrar calibración
+6. Asignar instrumento
+7. Registrar devolución
+8. Consultar asignaciones
+9. Consultar instrumentos persistidos en MySQL
+10. Ver últimas acciones de auditoría
+0. Salir
+Seleccione una opción: Código a buscar: INS-001 | Instrumento eléctrico [0-1000 V] | Fluke 179 | DISPONIBLE | venc. calibración: 2027-05-06
+
+========================================
+       SITRAC-MET - MENÚ PRINCIPAL
+========================================
+1. Registrar instrumento eléctrico
+2. Registrar instrumento mecánico
+3. Listar instrumentos en memoria
+4. Buscar instrumento por código
+5. Registrar calibración
+6. Asignar instrumento
+7. Registrar devolución
+8. Consultar asignaciones
+9. Consultar instrumentos persistidos en MySQL
+10. Ver últimas acciones de auditoría
+0. Salir
+Seleccione una opción: Código de instrumento: Condición de entrega: Asignación registrada con id 1
+
+========================================
+       SITRAC-MET - MENÚ PRINCIPAL
+========================================
+1. Registrar instrumento eléctrico
+2. Registrar instrumento mecánico
+3. Listar instrumentos en memoria
+4. Buscar instrumento por código
+5. Registrar calibración
+6. Asignar instrumento
+7. Registrar devolución
+8. Consultar asignaciones
+9. Consultar instrumentos persistidos en MySQL
+10. Ver últimas acciones de auditoría
+0. Salir
+Seleccione una opción: #1 | INS-001 | Juan Pérez | ABIERTA
+
+========================================
+       SITRAC-MET - MENÚ PRINCIPAL
+========================================
+1. Registrar instrumento eléctrico
+2. Registrar instrumento mecánico
+3. Listar instrumentos en memoria
+4. Buscar instrumento por código
+5. Registrar calibración
+6. Asignar instrumento
+7. Registrar devolución
+8. Consultar asignaciones
+9. Consultar instrumentos persistidos en MySQL
+10. Ver últimas acciones de auditoría
+0. Salir
+Seleccione una opción: Código de instrumento: Condición de devolución: Devolución registrada.
+
+========================================
+       SITRAC-MET - MENÚ PRINCIPAL
+========================================
+1. Registrar instrumento eléctrico
+2. Registrar instrumento mecánico
+3. Listar instrumentos en memoria
+4. Buscar instrumento por código
+5. Registrar calibración
+6. Asignar instrumento
+7. Registrar devolución
+8. Consultar asignaciones
+9. Consultar instrumentos persistidos en MySQL
+10. Ver últimas acciones de auditoría
+0. Salir
+Seleccione una opción: #1 | INS-001 | Juan Pérez | CERRADA
+
+========================================
+       SITRAC-MET - MENÚ PRINCIPAL
+========================================
+1. Registrar instrumento eléctrico
+2. Registrar instrumento mecánico
+3. Listar instrumentos en memoria
+4. Buscar instrumento por código
+5. Registrar calibración
+6. Asignar instrumento
+7. Registrar devolución
+8. Consultar asignaciones
+9. Consultar instrumentos persistidos en MySQL
+10. Ver últimas acciones de auditoría
+0. Salir
+Seleccione una opción: 
+Últimas acciones de auditoría:
+2026-11-06 23:38:34 | Asignación INS-001 a L-1001
+2026-11-06 23:38:34 | Devolución INS-001
+
+========================================
+       SITRAC-MET - MENÚ PRINCIPAL
+========================================
+1. Registrar instrumento eléctrico
+2. Registrar instrumento mecánico
+3. Listar instrumentos en memoria
+4. Buscar instrumento por código
+5. Registrar calibración
+6. Asignar instrumento
+7. Registrar devolución
+8. Consultar asignaciones
+9. Consultar instrumentos persistidos en MySQL
+10. Ver últimas acciones de auditoría
+0. Salir
+Seleccione una opción: SITRAC-MET finalizado correctamente.

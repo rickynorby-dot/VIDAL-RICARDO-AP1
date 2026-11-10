@@ -1,0 +1,20 @@
+digraph MVC {
+  graph [rankdir=LR, bgcolor="white", pad=0.25, nodesep=0.55, ranksep=0.8, splines=ortho, fontname="Arial", labelloc="t", label="Arquitectura MVC - SITRAC-MET AP4", fontsize=22];
+  node [shape=box, style="rounded,filled", fillcolor="#F7F9FA", color="#425466", penwidth=1.4, fontname="Arial", fontsize=12, margin="0.16,0.10"];
+  edge [color="#425466", penwidth=1.3, arrowsize=0.8, fontname="Arial", fontsize=10];
+
+  vista [label="VISTA\nConsolaVista\n- menú\n- captura de datos\n- presentación de resultados", fillcolor="#E9F4F2"];
+  controlador [label="CONTROLADOR\nSitracMetControlador\n- coordina casos de uso\n- valida flujo\n- maneja excepciones", fillcolor="#E8EEF8"];
+  modelo [label="MODELO / DOMINIO\nInstrumentoMedicion\nInstrumentoElectrico / Mecanico\nGestorInstrumentos\nAsignacion / Calibracion", fillcolor="#F6F1E8"];
+  repositorio [label="PERSISTENCIA\nRepositorioInstrumentos (interface)\nInstrumentoDAO\nCalibracionDAO\nAsignacionDAO", fillcolor="#F4EAF4"];
+  mysql [shape=cylinder, label="MySQL\nsitrac_met", fillcolor="#EEF2F5"];
+  archivo [shape=note, label="Archivo\ndata/auditoria-sitrac.log", fillcolor="#FFF7E6"];
+
+  vista -> controlador [label=" datos / opción "];
+  controlador -> vista [label=" mensajes / resultados ", dir=back];
+  controlador -> modelo [label=" operaciones de negocio "];
+  modelo -> controlador [label=" objetos / estados ", dir=back];
+  controlador -> repositorio [label=" persistir / consultar "];
+  repositorio -> mysql [label=" JDBC / SQL "];
+  controlador -> archivo [label=" registrar auditoría "];
+}

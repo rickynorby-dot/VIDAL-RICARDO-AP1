@@ -1,0 +1,26 @@
+digraph UML {
+  graph [rankdir=TB, bgcolor="white", pad=0.25, nodesep=0.55, ranksep=0.7, splines=ortho, fontname="Arial", labelloc="t", label="Clases principales e integración AP4 - SITRAC-MET", fontsize=22];
+  node [shape=box, style="rounded,filled", fillcolor="white", color="#394B59", penwidth=1.2, fontname="Arial", fontsize=10, margin="0.14,0.08"];
+  edge [color="#394B59", penwidth=1.2, arrowsize=0.8];
+
+  app [label="SitracMetApp\n+ main(args): void"];
+  ctrl [label="SitracMetControlador\n--------------------------\n- OPCIONES_MENU: String[]\n- gestor: GestorInstrumentos\n- repositorio: RepositorioInstrumentos\n- auditoria: AuditoriaArchivo\n--------------------------\n+ ejecutar(): void", fillcolor="#E8EEF8"];
+  vista [label="ConsolaVista\n--------------------------\n- scanner: Scanner\n--------------------------\n+ mostrarMenu(String[]): void\n+ mostrarInstrumentos(...): void\n+ mostrarInstrumentosBD(...): void", fillcolor="#E9F4F2"];
+  gestor [label="GestorInstrumentos\n--------------------------\n- instrumentos: ArrayList\n- calibraciones: ArrayList\n- asignaciones: ArrayList\n--------------------------\n+ buscarPorCodigo(...): InstrumentoMedicion\n+ asignar(...): Asignacion\n+ devolver(...): void", fillcolor="#F6F1E8"];
+  abstracto [label="<<abstract>> InstrumentoMedicion\n--------------------------\n- id: int\n- codigo: String\n- estado: EstadoInstrumento\n--------------------------\n+ estaDisponible(): boolean\n+ calibracionVigente(): boolean\n+ descripcionTipo(): String", fillcolor="#FFF9E8"];
+  electrico [label="InstrumentoElectrico\n- rangoElectrico: String\n+ descripcionTipo(): String"];
+  mecanico [label="InstrumentoMecanico\n- rangoMecanico: String\n+ descripcionTipo(): String"];
+  repo [label="<<interface>> RepositorioInstrumentos\n--------------------------\n+ insertar(...): void\n+ actualizarEstado(...): void\n+ listarTodos(): List", fillcolor="#F3ECF7"];
+  dao [label="InstrumentoDAO\n--------------------------\n+ insertar(...): void\n+ actualizarEstado(...): void\n+ listarTodos(): List", fillcolor="#F8F3FA"];
+  audit [label="AuditoriaArchivo\n--------------------------\n- archivo: Path\n--------------------------\n+ registrar(String): void\n+ leerUltimos(int): List", fillcolor="#FFF7E6"];
+
+  app -> ctrl [arrowhead=vee];
+  ctrl -> vista [arrowhead=vee];
+  ctrl -> gestor [arrowhead=vee];
+  ctrl -> repo [arrowhead=vee, style=dashed];
+  ctrl -> audit [arrowhead=vee];
+  gestor -> abstracto [arrowhead=vee];
+  electrico -> abstracto [arrowhead=empty];
+  mecanico -> abstracto [arrowhead=empty];
+  dao -> repo [arrowhead=empty, style=dashed];
+}
